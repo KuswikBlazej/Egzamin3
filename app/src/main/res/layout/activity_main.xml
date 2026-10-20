@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:text="Aktywność 1 - Konfigurator"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:background="#255793"
+        android:textColor="@android:color/white"></TextView>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Konfigurator Pizzy"
+        android:layout_margin="10dp"
+        android:textSize="40dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Autor: 000000000000"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#7d8183"></TextView>
+    <LinearLayout
+        android:layout_width="700px"
+        android:layout_height="400px"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wybierz rozmiar"
+            android:layout_margin="5dp"
+            android:textSize="20dp"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="Mała 25zł"
+                android:textSize="20dp"></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="Średnia 35zł"
+                android:textSize="20dp"></RadioButton>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="Duża 45zł"
+                android:textSize="20dp"></RadioButton>
+        </RadioGroup>
+    </LinearLayout>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Grube Ciasto"
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp">
+    </CheckBox>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Liczba sztuk: "
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"/>
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:inputType="number">
+        </EditText>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#255793"
+        android:text="PRZEJDŹ DO PODSUMOWANIA"
+        android:textSize="20dp"></Button>
+
+</LinearLayout>
