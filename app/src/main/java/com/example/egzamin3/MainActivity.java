@@ -1,6 +1,9 @@
 package com.example.egzamin3;
 
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +21,16 @@ public class MainActivity extends AppCompatActivity {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+
+            if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
+                Spinner dropdown = findViewById(R.id.spinner1);
+
+                String[] items = new String[]{"Mała 25zł", "Średnia 35zł", "Duża 45zł"};
+
+                ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
+                dropdown.setAdapter(adapter);
+            }
+
             return insets;
         });
     }
