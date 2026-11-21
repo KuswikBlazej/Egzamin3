@@ -47,16 +47,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <RadioButton
+                android:id="@+id/s1"
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
                 android:text="Mała 25zł"
                 android:textSize="20dp"></RadioButton>
             <RadioButton
+                android:id="@+id/s2"
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
                 android:text="Średnia 35zł"
                 android:textSize="20dp"></RadioButton>
             <RadioButton
+                android:id="@+id/s3"
                 android:layout_width="wrap_content"
                 android:layout_height="32dp"
                 android:text="Duża 45zł"
@@ -64,6 +67,7 @@
         </RadioGroup>
     </LinearLayout>
     <CheckBox
+        android:id="@+id/thick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Grube Ciasto"
@@ -80,12 +84,14 @@
             android:textSize="20dp"
             android:layout_marginLeft="10dp"/>
         <EditText
+            android:id="@+id/count"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
             android:inputType="number">
         </EditText>
     </LinearLayout>
     <Button
+        android:id="@+id/Next"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
